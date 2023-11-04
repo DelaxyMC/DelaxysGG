@@ -13,10 +13,8 @@ Join [our support Discord](https://discord.gg/d4KFR9H) for support.
 
 ## Developing
 **Requirements:**
-- JDK (Java Development Kit) 8
-    * [AdoptOpenJDK](https://adoptopenjdk.net/)
-    * [Other OpenJDK distributions](https://en.wikipedia.org/wiki/OpenJDK#OpenJDK_builds)
-    * [Oracle JDK (proprietary)](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+- JDK (Java Development Kit)
+    * [Eclipse Temurin](https://adoptium.net/)
     
 - A Java IDE, we recommend using [IntelliJ IDEA](https://jetbrains.com/idea/)
  
