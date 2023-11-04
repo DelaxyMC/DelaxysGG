@@ -53,6 +53,23 @@ public class AutoGGConfig extends Vigilant {
     private int autoGGPhrase = 0;
 
     @Property(
+            type = PropertyType.SWITCH, name = "Custom AutoGG",
+            description = "Toggles the custom AutoGG phrase",
+            category = "General",
+            subcategory = "Custom"
+    )
+    private boolean customGGMessageEnabled = false;
+
+    @Property(
+            type = PropertyType.TEXT,
+            name = "Custom GG Message",
+            description = "Change the text for your custom AutoGG phrase.",
+            category = "General",
+            subcategory = "Custom"
+    )
+    private String customGGMessage = "gg";
+
+    @Property(
         type = PropertyType.SWITCH, name = "Second Message",
         description = "Enable a secondary message to send after your first GG.",
         category = "General", subcategory = "Secondary Message"
@@ -88,6 +105,10 @@ public class AutoGGConfig extends Vigilant {
         return casualAutoGGEnabled;
     }
 
+    public boolean isCustomGGMessageEnabled() {
+        return customGGMessageEnabled;
+    }
+
     public boolean isAntiGGEnabled() {
         return antiGGEnabled;
     }
@@ -102,6 +123,10 @@ public class AutoGGConfig extends Vigilant {
 
     public int getAutoGGPhrase() {
         return autoGGPhrase;
+    }
+
+    public String getCustomGGMessage() {
+        return customGGMessage;
     }
 
     public boolean isSecondaryEnabled() {

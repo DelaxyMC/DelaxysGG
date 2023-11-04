@@ -106,7 +106,14 @@ public class AutoGGHandler {
             if (System.currentTimeMillis() - lastGG < 10_000) return;
             lastGG = System.currentTimeMillis();
 
-            String ggMessage = AutoGG.INSTANCE.getPrimaryGGStrings()[AutoGG.INSTANCE.getAutoGGConfig().getAutoGGPhrase()];
+            String ggMessage;
+
+            if (AutoGG.INSTANCE.getAutoGGConfig().isCustomGGMessageEnabled()) {
+                ggMessage = AutoGG.INSTANCE.getAutoGGConfig().getCustomGGMessage();
+            } else {
+                ggMessage = AutoGG.INSTANCE.getPrimaryGGStrings()[AutoGG.INSTANCE.getAutoGGConfig().getAutoGGPhrase()];
+            }
+
             int delay = AutoGG.INSTANCE.getAutoGGConfig().getAutoGGDelay();
 
             Multithreading.schedule(() -> Minecraft.getMinecraft().thePlayer.sendChatMessage(prefix.isEmpty() ? ggMessage : prefix + " " + ggMessage), delay, TimeUnit.SECONDS);
