@@ -3,8 +3,8 @@
     "modid": "delaxysgg",
     "name": "DelaxysGG",
     "description": "AutoGG automatically says a selectable phrase after a game has ended on supported servers.",
-    "version": "1.0.0",
-    "mcversion": "1.8.9",
+    "version": "${version}",
+    "mcversion": "{mcVersionStr}",
     "url": "https://github.com/DelaxyMC/DelaxysGG",
     "updateUrl": "",
     "authorList": [
