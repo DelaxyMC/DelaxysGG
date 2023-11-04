@@ -42,7 +42,7 @@ import java.util.*;
  *
  * @author ChachyDev
  */
-@Mod(modid = "delaxysgg", name = "DelaxysGG", version = "1.0.0")
+@Mod(modid = "delaxysgg", name = "DelaxysGG", version = "4.2.0")
 public class AutoGG {
 
     @Mod.Instance
