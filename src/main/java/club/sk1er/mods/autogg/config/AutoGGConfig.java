@@ -67,7 +67,7 @@ public class AutoGGConfig extends Vigilant {
             category = "General",
             subcategory = "Custom"
     )
-    private String customGGMessage = "gg";
+    private String customGGMessage = "Good Game";
 
     @Property(
         type = PropertyType.SWITCH, name = "Second Message",
